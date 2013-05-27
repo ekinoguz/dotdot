@@ -1,0 +1,7 @@
+[http]
+	sslVerify = false
+[user]
+	name = ekinoguz
+	email = ekinoguz@gmail.com
+[color]
+	ui = auto
