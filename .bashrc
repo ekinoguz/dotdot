@@ -19,15 +19,6 @@ export PATH=$PATH:/Applications/virtualenv-1.8.4/virtualenv/
 export PATH="/usr/local/heroku/bin:$PATH"
 export PYTHONIOENCODING=utf-8
 
-alias g="git"
-alias f="find . | xargs grep"
-alias grep="grep --color=auto"
-alias a='aria2c --seed-time=0'
-alias em='emacs -nw'
-alias ping='ping -c 3'
-alias ..='cd ../'
-alias ...='cd ../../'
-
 BASH_NEWLINE="\n"
 BASH_GRAY="\[\e[1;30m\]"
 BASH_LIGHT_GREEN="\[\e[1;32m\]"
@@ -37,4 +28,23 @@ BASH_LIGHT_GRAY="\[\e[0;37m\]"
 # Fix LS colors
 export LS_COLORS='di=01;33'
 
-# Heyo
+# Git shortcuts
+alias gis='git status'
+alias gia='git add'
+alias gid='git diff'
+alias gib='git branch'
+alias gic='git checkout '
+
+alias f="find . | xargs grep"
+alias grep="grep --color=auto"
+alias a='aria2c --seed-time=0'
+alias em='emacs -nw'
+alias ping='ping -c 3'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ll='ls -l'
+alias la='ls -la'
+
+# cd aliases
+alias r='cd ~/Dropbox/repos/'
+alias d='cd ~/Dropbox/'
