@@ -46,5 +46,6 @@ alias ll='ls -l'
 alias la='ls -la'
 
 # cd aliases
-alias r='cd ~/Dropbox/repos/'
+alias dr='cd ~/Dropbox/repos/'
 alias d='cd ~/Dropbox/'
+alias r='cd ~/repos/'
