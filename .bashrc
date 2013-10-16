@@ -8,7 +8,7 @@ function parse_git_branch {
 #PS1="\e[0;32m\u\w\$(parse_git_branch)\$\e[m :) $ "
 #PS1="\e[0;32m\u\w\e[m\e[0;33m\$(parse_git_branch)\e[m :) $ ";
 #PS1="\e[0;32m\w\e[m\e[0;33m\$(parse_git_branch)\e[m :) $ ";
-PS1="\[\e[0;32m\]\w\[\e[m\e[0;33m\]\$(parse_git_branch)\[\e[m\] :) $ "
+PS1="\[\e[0;32m\]\w\[\e[m\e[0;33m\]\$(parse_git_branch)\[\e[m\] :) $ ";
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export SVN_EDITOR=vim
@@ -43,6 +43,7 @@ alias em='emacs -nw'
 alias ping='ping -c 3'
 alias ..='cd ../'
 alias ...='cd ../../'
+alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -la'
 
