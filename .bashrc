@@ -1,3 +1,12 @@
+# enable bash completion in interactive shells
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
 # Get git branch on terminal
 function parse_git_branch {
     ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
@@ -8,7 +17,7 @@ function parse_git_branch {
 #PS1="\e[0;32m\u\w\$(parse_git_branch)\$\e[m :) $ "
 #PS1="\e[0;32m\u\w\e[m\e[0;33m\$(parse_git_branch)\e[m :) $ ";
 #PS1="\e[0;32m\w\e[m\e[0;33m\$(parse_git_branch)\e[m :) $ ";
-PS1="\[\e[0;32m\]\w\[\e[m\e[0;33m\]\$(parse_git_branch)\[\e[m\] :) $ ";
+PS1="@$HOSTNAME\[\e[0;32m\]\w\[\e[m\e[0;33m\]\$(parse_git_branch)\[\e[m\] :) $ ";
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export SVN_EDITOR=vim
