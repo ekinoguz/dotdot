@@ -1,7 +1,10 @@
 [http]
-	sslVerify = false
+  sslVerify = false
 [user]
-	name = ekinoguz
-	email = ekinoguz@gmail.com
+  name = ekinoguz
+  email = ekinoguz@gmail.com
 [color]
-	ui = auto
+  ui = auto
+[alias]
+  clear = stash --keep-index --include-untracked
+  
